@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="4" ignored="0" total="5" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="MakeMyTrip" duration-ms="273390" started-at="2021-08-27T16:54:52 IST" finished-at="2021-08-27T16:59:26 IST">
+    <groups>
+    </groups>
+    <test name="Validating Booking Flight" duration-ms="58787" started-at="2021-08-27T16:54:52 IST" finished-at="2021-08-27T16:55:51 IST">
+      <class name="academy.HomePage">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:academy.HomePage@e1f6c7]" name="initialize" is-config="true" duration-ms="7532" started-at="2021-08-27T16:54:52 IST" finished-at="2021-08-27T16:55:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="FAIL" signature="selectingFromAndTo(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:academy.HomePage@e1f6c7]" name="selectingFromAndTo" duration-ms="32513" started-at="2021-08-27T16:55:00 IST" data-provider="getData" finished-at="2021-08-27T16:55:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[bang]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chen]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Destination #1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <input data-cy="fromCity" id="fromCity" type="text" class="fsw_inputField lineHeight36 latoBlack font30" readonly="" value="Delhi"> is not clickable at point (170, 258). Other element would receive the click: <div data-cy="outsideModal" class="loginModal displayBlock modalLogin dynHeight personal "></div>
+  (Session info: chrome=92.0.4515.159)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-TSLHRBF', ip: '192.168.39.37', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\Vikram\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52269}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cf4f523538a42c6b74424581a568b283]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input data-cy="fromCity" id="fromCity" type="text" class="fsw_inputField lineHeight36 latoBlack font30" readonly="" value="Delhi"> is not clickable at point (170, 258). Other element would receive the click: <div data-cy="outsideModal" class="loginModal displayBlock modalLogin dynHeight personal "></div>
+  (Session info: chrome=92.0.4515.159)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-TSLHRBF', ip: '192.168.39.37', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\Vikram\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52269}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cf4f523538a42c6b74424581a568b283
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at academy.HomePage.selectingFromAndTo(HomePage.java:40)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectingFromAndTo -->
+        <test-method status="FAIL" signature="selectingFromAndTo(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:academy.HomePage@e1f6c7]" name="selectingFromAndTo" duration-ms="10105" started-at="2021-08-27T16:55:36 IST" data-provider="getData" finished-at="2021-08-27T16:55:46 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[del]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[new]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Destination #2]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <input data-cy="fromCity" id="fromCity" type="text" class="fsw_inputField lineHeight36 latoBlack font30" readonly="" value="Delhi"> is not clickable at point (170, 258). Other element would receive the click: <div data-cy="outsideModal" class="loginModal displayBlock modalLogin dynHeight personal "></div>
+  (Session info: chrome=92.0.4515.159)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-TSLHRBF', ip: '192.168.39.37', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\Vikram\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52269}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cf4f523538a42c6b74424581a568b283]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input data-cy="fromCity" id="fromCity" type="text" class="fsw_inputField lineHeight36 latoBlack font30" readonly="" value="Delhi"> is not clickable at point (170, 258). Other element would receive the click: <div data-cy="outsideModal" class="loginModal displayBlock modalLogin dynHeight personal "></div>
+  (Session info: chrome=92.0.4515.159)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-TSLHRBF', ip: '192.168.39.37', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\Vikram\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52269}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cf4f523538a42c6b74424581a568b283
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at academy.HomePage.selectingFromAndTo(HomePage.java:40)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectingFromAndTo -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:academy.HomePage@e1f6c7]" name="teardown" is-config="true" duration-ms="5404" started-at="2021-08-27T16:55:46 IST" finished-at="2021-08-27T16:55:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- academy.HomePage -->
+    </test> <!-- Validating Booking Flight -->
+    <test name="Validating Header Links" duration-ms="37707" started-at="2021-08-27T16:55:56 IST" finished-at="2021-08-27T16:56:34 IST">
+      <class name="academy.ValidatingHeaderLinks">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:academy.ValidatingHeaderLinks@4ea235]" name="initialize" is-config="true" duration-ms="33217" started-at="2021-08-27T16:55:56 IST" finished-at="2021-08-27T16:56:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="FAIL" signature="validatingHeaderLinks()[pri:0, instance:academy.ValidatingHeaderLinks@4ea235]" name="validatingHeaderLinks" duration-ms="2754" started-at="2021-08-27T16:56:29 IST" finished-at="2021-08-27T16:56:32 IST">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at org.junit.Assert.fail(Assert.java:87)
+at org.junit.Assert.assertTrue(Assert.java:42)
+at org.junit.Assert.assertTrue(Assert.java:53)
+at academy.ValidatingHeaderLinks.validatingHeaderLinks(ValidatingHeaderLinks.java:39)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingHeaderLinks -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:academy.ValidatingHeaderLinks@4ea235]" name="teardown" is-config="true" duration-ms="1472" started-at="2021-08-27T16:56:32 IST" finished-at="2021-08-27T16:56:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- academy.ValidatingHeaderLinks -->
+    </test> <!-- Validating Header Links -->
+    <test name="Validating Footer Section" duration-ms="31423" started-at="2021-08-27T16:56:34 IST" finished-at="2021-08-27T16:57:05 IST">
+      <class name="academy.ValidatingFooterSection">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:academy.ValidatingFooterSection@10ab13f]" name="initialize" is-config="true" duration-ms="30713" started-at="2021-08-27T16:56:34 IST" finished-at="2021-08-27T16:57:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="validatingFooterSection()[pri:0, instance:academy.ValidatingFooterSection@10ab13f]" name="validatingFooterSection" duration-ms="212" started-at="2021-08-27T16:57:05 IST" finished-at="2021-08-27T16:57:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingFooterSection -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:academy.ValidatingFooterSection@10ab13f]" name="teardown" is-config="true" duration-ms="495" started-at="2021-08-27T16:57:05 IST" finished-at="2021-08-27T16:57:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- academy.ValidatingFooterSection -->
+    </test> <!-- Validating Footer Section -->
+    <test name="Validating title in the Page" duration-ms="140478" started-at="2021-08-27T16:57:05 IST" finished-at="2021-08-27T16:59:26 IST">
+      <class name="academy.ValidateTitle">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:academy.ValidateTitle@1d80d2b]" name="initialize" is-config="true" duration-ms="138642" started-at="2021-08-27T16:57:05 IST" finished-at="2021-08-27T16:59:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="FAIL" signature="validateAppTitle()[pri:0, instance:academy.ValidateTitle@1d80d2b]" name="validateAppTitle" duration-ms="284" started-at="2021-08-27T16:59:24 IST" finished-at="2021-08-27T16:59:24 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [make my tri] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [make my tri] but found []
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at academy.ValidateTitle.validateAppTitle(ValidateTitle.java:39)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAppTitle -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:academy.ValidateTitle@1d80d2b]" name="teardown" is-config="true" duration-ms="860" started-at="2021-08-27T16:59:25 IST" finished-at="2021-08-27T16:59:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- academy.ValidateTitle -->
+    </test> <!-- Validating title in the Page -->
+  </suite> <!-- MakeMyTrip -->
+</testng-results>

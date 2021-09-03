@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 280.226 s <<< FAILURE! - in TestSuite
+academy.HomePage.selectingFromAndTo[bang, chen, Destination #1](1)  Time elapsed: 32.515 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <input data-cy="fromCity" id="fromCity" type="text" class="fsw_inputField lineHeight36 latoBlack font30" readonly="" value="Delhi"> is not clickable at point (170, 258). Other element would receive the click: <div data-cy="outsideModal" class="loginModal displayBlock modalLogin dynHeight personal "></div>
+  (Session info: chrome=92.0.4515.159)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-TSLHRBF', ip: '192.168.39.37', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\Vikram\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52269}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cf4f523538a42c6b74424581a568b283
+	at academy.HomePage.selectingFromAndTo(HomePage.java:40)
+
+academy.HomePage.selectingFromAndTo[del, new, Destination #2](2)  Time elapsed: 10.108 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <input data-cy="fromCity" id="fromCity" type="text" class="fsw_inputField lineHeight36 latoBlack font30" readonly="" value="Delhi"> is not clickable at point (170, 258). Other element would receive the click: <div data-cy="outsideModal" class="loginModal displayBlock modalLogin dynHeight personal "></div>
+  (Session info: chrome=92.0.4515.159)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-TSLHRBF', ip: '192.168.39.37', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\Vikram\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52269}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cf4f523538a42c6b74424581a568b283
+	at academy.HomePage.selectingFromAndTo(HomePage.java:40)
+
+academy.ValidatingHeaderLinks.validatingHeaderLinks  Time elapsed: 2.734 s  <<< FAILURE!
+java.lang.AssertionError
+	at academy.ValidatingHeaderLinks.validatingHeaderLinks(ValidatingHeaderLinks.java:39)
+
+academy.ValidateTitle.validateAppTitle  Time elapsed: 0.272 s  <<< FAILURE!
+java.lang.AssertionError: expected [make my tri] but found []
+	at academy.ValidateTitle.validateAppTitle(ValidateTitle.java:39)
+

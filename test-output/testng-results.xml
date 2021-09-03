@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="MakeMyTrip" duration-ms="138623" started-at="2021-09-02T13:10:24Z" finished-at="2021-09-02T13:12:43Z">
+    <groups>
+    </groups>
+    <test name="Validating Booking Flight" duration-ms="138623" started-at="2021-09-02T13:10:24Z" finished-at="2021-09-02T13:12:43Z">
+      <class name="academy.HomePage">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:academy.HomePage@1175c00]" name="initialize" is-config="true" duration-ms="31052" started-at="2021-09-02T18:40:24Z" finished-at="2021-09-02T18:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="bookingFlight()[pri:0, instance:academy.HomePage@1175c00]" name="bookingFlight" duration-ms="107007" started-at="2021-09-02T18:40:55Z" finished-at="2021-09-02T18:42:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookingFlight -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:academy.HomePage@1175c00]" name="teardown" is-config="true" duration-ms="10" started-at="2021-09-02T18:42:43Z" finished-at="2021-09-02T18:42:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- academy.HomePage -->
+    </test> <!-- Validating Booking Flight -->
+  </suite> <!-- MakeMyTrip -->
+</testng-results>

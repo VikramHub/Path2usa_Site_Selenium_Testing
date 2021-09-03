@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [MakeMyTrip]">
+  <listeners>
+    <listener class-name="academy.Listeners"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Validating Booking Flight(failed)">
+    <classes>
+      <class name="academy.HomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+          <include name="selectingFromAndTo" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- academy.HomePage -->
+    </classes>
+  </test> <!-- Validating Booking Flight(failed) -->
+  <test thread-count="5" verbose="0" name="Validating Header Links(failed)">
+    <classes>
+      <class name="academy.ValidatingHeaderLinks">
+        <methods>
+          <include name="teardown"/>
+          <include name="validatingHeaderLinks"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- academy.ValidatingHeaderLinks -->
+    </classes>
+  </test> <!-- Validating Header Links(failed) -->
+  <test thread-count="5" verbose="0" name="Validating title in the Page(failed)">
+    <classes>
+      <class name="academy.ValidateTitle">
+        <methods>
+          <include name="validateAppTitle"/>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- academy.ValidateTitle -->
+    </classes>
+  </test> <!-- Validating title in the Page(failed) -->
+</suite> <!-- Failed suite [MakeMyTrip] -->
